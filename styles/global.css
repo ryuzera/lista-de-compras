@@ -25,3 +25,7 @@
     --p: 500 16px/20px var(--ff-sans);
     --link: 500 14px/16px var(--ff-sans);
 }
+
+h2 {
+    font: var(--title);
+}

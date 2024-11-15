@@ -12,9 +12,43 @@
 </head>
 <body>
     <header>
+        <img src="assets/icons/logo.svg" alt="">
+
         <div class="container">
-            <img src="assets/icons/logo.svg" alt="">
+            <a href="#">
+                <img src="/assets/icons/back.svg" alt="">
+            </a>
+
+            <h2>Compras da semana</h2>
         </div>
+
+        <main>
+            <form>
+                <input type="text" placeholder="Adicione um novo item" id="add-item">
+                <button type="submit" id="btn" class="button">Adicionar item</button>
+            </form>
+
+            <ul>
+                <li id="item-1" class="item">
+                    <span>Pão de forma</span>
+                </li>
+
+                <li id="item-2" class="item">
+                    <span>Café</span>
+                </li>
+
+                <li id="item-3" class="item">
+                    <span>Suco de laranja</span>
+                </li>
+
+                <li id="item-4" class="item">
+                        <span>Leite</span>
+                </li>
+            </ul>
+        </main>
+
     </header>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

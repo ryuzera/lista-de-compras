@@ -1,0 +1,27 @@
+body {
+    background-color: var(--bg-primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (width < 80em) {
+    & header {
+        & img[src*="logo"] {
+            display: none;
+        }
+    }
+}
