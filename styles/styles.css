@@ -1,9 +1,5 @@
 body {
-    background: linear-gradient(
-        180deg,
-        var(--bg-primary) 0%,
-        var(--color-brand) 190%
-    );
+    background-color: var(--bg-primary);
     width: 100vw;
     height: 100vh;
     padding-inline: 32px;
