@@ -10,6 +10,7 @@ Este é um projeto simples de lista de compras, onde é possível adicionar e re
 
 ## Funcionalidades
 - **Adicionar itens:** Insira o nome do item na caixa de texto e clique no botão para adicionar à lista.
+- **Checagem dos itens:** É possível checar o item clicando no checkbox ao lado do item adicionado.
 - **Remover itens:** Clique no ícone de remoção (lixeira) para excluí-lo da lista.
 
 ## Preview do projeto
