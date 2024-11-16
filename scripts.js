@@ -3,7 +3,8 @@ const button = document.getElementById("add-item")
 const list = document.querySelector("ul")
 const deleteButton = document.getElementsByClassName("delete-button")
 
-button.addEventListener("click", () => {
+button.addEventListener("click", (e) => {
+    e.preventDefault()
     const newItem = input.value.trim();
 
     // Verifica se o input não está vazio
@@ -28,12 +29,7 @@ button.addEventListener("click", () => {
             listItem.remove()
 
             // Exibe o alert
-            Swal.fire({
-                title: 'Removido!',
-                text: 'O item foi removido da lista',
-                icon: 'success',
-                confirmButtonText: 'Cool'
-              })
+            alert("O item foi removido da lista")
         })
 
         listItem.classList.add("item")
@@ -52,10 +48,6 @@ button.addEventListener("click", () => {
     }
 
 })
-
-document.getElementsByClassName('delete-button').onclick = function(){
-    swal("Olá mundo!");
-};
 
 
 // form.addEventListener("submit", (event) => {
