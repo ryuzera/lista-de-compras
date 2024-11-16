@@ -1,5 +1,9 @@
 body {
-    background-color: var(--bg-primary);
+    background: linear-gradient(
+        180deg,
+        var(--bg-primary) 0%,
+        var(--color-brand) 190%
+    );
     width: 100vw;
     height: 100vh;
     padding-inline: 32px;
@@ -24,6 +28,7 @@ input {
     padding-block: 11px;
     padding-inline: 16px 136px;
     outline: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
     background-color: var(--bg-secondary);
     border: 2px solid var(--border-primary);
@@ -45,6 +50,8 @@ form button {
     border-radius: 12px;
     width: 326px;
     height: 44px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
 
     color: #fff;
     background-color: var(--color-brand);
@@ -72,6 +79,8 @@ li {
     border-radius: 12px;
     margin-bottom: 12px;
     padding-block: 12px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
 
     background-color: var(--bg-secondary);
     font: var(--p);
@@ -138,5 +147,30 @@ li {
         & img[src*="logo"] {
             display: none;
         }
+    }
+}
+
+@media (width >= 80em) {
+
+    & img[src*="logo"] {
+        position: absolute;
+        width: 155.51px;
+        height: 40px;
+        left: calc(50% - 155.51px/2 - 0.24px);
+        top: 25px;
+    }
+
+    & input {
+        width: 451px;
+        margin-right: 16px;
+    }
+
+    & form button {
+        width: 160px;
+    }
+
+    & .item {
+        width: 627px;
+        height: 49px;
     }
 }
